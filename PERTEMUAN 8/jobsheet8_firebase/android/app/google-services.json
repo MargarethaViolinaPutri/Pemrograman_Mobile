@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "411430534079",
+    "project_id": "flutterfirebase-bcbf4",
+    "storage_bucket": "flutterfirebase-bcbf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411430534079:android:723804f2beb210aa5dbf0a",
+        "android_client_info": {
+          "package_name": "com.Jobsheet8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411430534079-3gsoc33c13ocg3csejoa98dqjiibupfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Jobsheet8",
+            "certificate_hash": "61ce04fffff03449764db7fa1541700a7fbb3a8f"
+          }
+        },
+        {
+          "client_id": "411430534079-24tvq450tblv38onjbeqjd21tnq5gmq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGUOMvdi9HEJYzgmMgiRJP5viEeY8p9wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411430534079-24tvq450tblv38onjbeqjd21tnq5gmq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
