@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -12,7 +11,8 @@ String? imageUrl;
 Future<String?> signInWithGoogle() async {
   try {
     await Firebase.initializeApp();
-    final GoogleSignInAccount? googleSignInAccount = await googleSignIn.signIn();
+    final GoogleSignInAccount? googleSignInAccount =
+        await googleSignIn.signIn();
     if (googleSignInAccount == null) {
       // User canceled the sign-in.
       return null;
@@ -56,5 +56,5 @@ Future<void> signOutGoogle() async {
     print("User Signed Out");
   } catch (e) {
     print('Error during Google sign-out: $e');
-  }
+  }
 }

@@ -8,19 +8,22 @@ class HttpService {
   final String baseUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=';
 
   Future<List<Movie>?> getPopularMovies() async {
-    final String uri = baseUrl + apikey;
+    final String uri = baseUrl + apiKey;
 
-    http.Response result = await http.get(Uri.parse(uri));
-    if (result.statusCode == HttpStatus.ok) {
-      print("Success");
-      final jsonResponse = json.decode(result.body);
-      final moviesMap = jsonResponse['results'];
-      List<Movie> movies =
-          List<Movie>.from(moviesMap.map((i) => Movie.fromJson(i) as Movie));
-      return movies;
-    } else {
-      print("Fail");
-      return null;
+    Future<List?> getPopularMovies() async {
+      final String uri = baseUrl + apiKey;
+
+      http.Response result = await http.get(Uri.parse(uri));
+      if (result.statusCode == HttpStatus.ok) {
+        print("sukses");
+        final jsonResponse = json.decode(result.body);
+        final moviesMap = jsonResponse['results'];
+        List movies = moviesMap.map((e) => Movie.fromJson(e)).toList();
+        return movies;
+      } else {
+        print("fail");
+        return null;
+      }
     }
   }
 }
